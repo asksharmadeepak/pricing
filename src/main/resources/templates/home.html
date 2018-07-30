@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<fieldset>
+    <legend><h2>Price API</h2></legend>
+    <p><h3>1. revenue-yield - GET </h3> <h4>/price/revenue-yield/{price}</h4></p>
+    <p><h3>2. earning-ratio - GET</h3> <h4>/price/earning-ratio/{price}</h4></p>
+</fieldset>
+
+<fieldset>
+    <legend><h2>Trade API</h2></legend>
+    <h3>1. volume-weighted - GET</h3><h4>/trade/volume-weighted</h4>
+    <h3>2. Show all trade - GET</h3><h4>/trade/view</h4>
+    <h3>3. trade api - POST</h3><h4>/trade</h4>
+    <div>
+        Content-Type -> application/json <br>
+        Sample Body ->
+        {
+        "quantity":"1",
+        "buySellIndicator": "buy",
+        "price":"100"
+        }
+    </div>
+</fieldset>
+
+</body>
+</html>
